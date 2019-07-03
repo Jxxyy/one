@@ -58,7 +58,7 @@ def guest_manage(request):
 
 #签到页面
 @login_required
-def sign_index(request, event_id):
+def sign_index(request, event_id):    #第二个参数接收url路径的参数
 	event = get_object_or_404(Event, id=event_id)
 	return render(request, 'sign_index.html', {'event':event})
 
