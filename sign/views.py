@@ -60,7 +60,8 @@ def guest_manage(request):
 @login_required
 def sign_index(request, event_id):    #第二个参数接收url路径的参数
 	event = get_object_or_404(Event, id=event_id)
-	return render(request, 'sign_index.html', {'event':event})
+	signnum = Guest.objects.filter(event_id = event_id,sign= 1).count()  #统计已签到的人数
+	return render(request, 'sign_index.html', {'event':event,'signnum':signnum})
 
 # 签到动作
 @login_required
@@ -79,3 +80,11 @@ def sign_index_action(request,event_id):
 	else:
 		Guest.objects.filter(phone=phone,event_id=event_id).update(sign = '1')
 		return render(request, 'sign_index.html', {'event': event,'hint':'sign in success!','guest': result})
+
+#退出系统
+@login_required
+def logout(request):
+	auth.logout(request) #退出登录
+	response = HttpResponseRedirect('/index/')
+	return response
+
