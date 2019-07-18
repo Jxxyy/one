@@ -25,7 +25,7 @@ SECRET_KEY = 'p=ztobeg!_mxmlk#2%r9at5ch9iu99nq5&&%6dpzh7354v@24b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
