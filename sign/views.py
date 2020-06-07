@@ -6,6 +6,8 @@ from sign.models import Event,Guest
 from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 from django.shortcuts import render, get_object_or_404
 
+
+
 #auth存放用户数据
 # Create your views here.
 def index(request):   #request参数代表客户端浏览器向服务器请求的一个信息字符串
