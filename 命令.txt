@@ -2,8 +2,3 @@
 2. python manage.py  runserver  启动项目
 3.python manage.py  runserver 0.0.0.0:8000 允许外部访问
 4.HTMLTestRunner不支持py3 需要修改
-
-a.接口实现方式
-b.接口测试实现方式
-c.常用工具
-d.安全认证方式
