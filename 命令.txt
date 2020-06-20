@@ -1,7 +1,4 @@
-﻿1.python C:\Users\xy\Desktop\github\one\manage.py  migrate  表结构迁移（需要手动创建数据库）
-2. python C:\Users\xy\Desktop\github\one\manage.py  runserver  启动签到项目
-3.python C:\Users\xy\Desktop\github\one\manage.py  runserver 0.0.0.0:8000 允许外部访问
+﻿1.python manage.py  migrate  表结构迁移（需要手动创建数据库）
+2. python manage.py  runserver  启动项目
+3.python manage.py  runserver 0.0.0.0:8000 允许外部访问
 4.HTMLTestRunner不支持py3 需要修改
-5.http://localhost:8580/jenkins/   jenkins，需要启动tomcat
-6.http://localhost:8580    tomcat
-
